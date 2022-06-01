@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <script type="module" crossorigin src="/assets/index.6b6f57e3.js"></script>
+  <link rel="stylesheet" href="/assets/index.9801f704.css">
+</head>
+
+<body class="bg-veryDarkBlue ">
+  <div class="w-full h-[100vh] flex justify-center items-center relative perspective">
+    <div class="w-[280px] h-[400px] " id="card">
+      <!-- Rating state start -->
+      <div class=" bg-darkBlue rounded-3xl block front absolute backface">
+        <section class="flex-col justify-center content-center p-5">
+          <div class="bg-veryDarkBlue mb-5 rounded-full h-7 w-7 flex justify-center items-center ">
+            <img src="/assets/icon-star.3e70bfda.svg" alt="star" class=" h-3 w-3">
+          </div>
+          <h1 class="text-projectWhite"> How did we do?</h1>
+          <p class="text-lightGrey text-sm">Please let us know how we did with your support request. All feedback is
+            appreciated
+            to help us improve our offering!</p>
+          <div class="flex justify-between  flex-row text-center mt-4 mb-4 text-lightGrey w-full">
+            <div class="bg-veryDarkBlue w-8 h-8 rounded-full  flex justify-center active:bg-darkBlue"><button id="btn1"
+                value="1">1</button>
+            </div>
+            <div class="bg-veryDarkBlue w-8 h-8 rounded-full  flex justify-center active:bg-darkBlue"><button id="btn2"
+                value="2">2</button>
+            </div>
+            <div class="bg-veryDarkBlue w-8 h-8 rounded-full flex justify-center active:bg-darkBlue"><button id="btn3" value="3">3</button>
+            </div>
+            <div class="bg-veryDarkBlue w-8 h-8 rounded-full flex justify-center active:bg-darkBlue"><button id="btn4" value="4">4</button>
+            </div>
+            <div class="bg-veryDarkBlue w-8 h-8 rounded-full flex justify-center active:bg-darkBlue"><button id="btn5" value="5">5</button>
+            </div>
+          </div>
+          <button class="rounded-3xl bg-btnOrange p-2 w-full text-projectWhite" id="submit-btn">SUBMIT</button>
+        </section>
+      </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class=" bg-darkBlue rounded-3xl  block back backface absolute">
+        <section class="flex flex-col justify-center p-5 text-center">
+          <div class="mt-3 self-center flex justify-center flex-col">
+            <img src="/assets/illustration-thank-you.a52834b7.svg" alt="thank you" width="100" height="50" class="self-center">
+            <p class="bg-veryDarkBlue rounded-3xl text-btnOrange p-2 mt-2">You selected <span id="result"> </span> out
+              of
+              5</p>
+          </div>
+          <div class="m-2">
+            <p class="text-projectWhite mt-1 text-lg">Thank you!</p>
+            <p class="text-sm text-lightGrey">
+              We appreciate you taking the time to give a rating.</p>
+            <p class="text-sm text-lightGrey"> If you ever need more support, don’t hesitate to get in touch!</p>
+          </div>
+        </section>
+      </div>
+      <!-- Thank you state end -->
+    </div>
+  </div>
+  <div class="text-xs text-center p-10">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-[#3E52A3]" target="_blank">Frontend
+      Mentor</a>.
+    Coded by <a href="#" class="text-[#3E52A3]">Otuekong Arthur</a>.
+  </div>
+  
+</body>
+
+</html>

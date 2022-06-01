@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+#card{
+    transform-style:preserve-3d;
+    transition: transform 1s ease-in-out;
+}
+
+#card .back {
+    transform: rotateY(180deg);
+}
+.backface{
+    backface-visibility: hidden;
+}
+.perspective{
+    perspective: 800px;
+}
+
+#card.flipped{
+    transform: rotateY(180deg);
+}
+@tailwind utilities;
