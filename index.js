@@ -7,14 +7,14 @@ const button5 = document.getElementById("btn5");
 const display = document.getElementById("result");
 
 // Rating
-function selection(rating) {
-    display.innerHTML = rating;
-}
+function selection(rating) { display.innerHTML = rating; }
+// Function ends here
 button1.addEventListener("click", () => { selection(1) });
 button2.addEventListener("click", () => { selection(2) });
 button3.addEventListener("click", () => { selection(3) });
 button4.addEventListener("click", () => { selection(4) });
 button5.addEventListener("click", () => { selection(5) });
+
 // Card Flip
 function showThanks() {
     let card = document.querySelector('#card');
